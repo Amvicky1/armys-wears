@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Enquiry & Appointment Booking | Army’s Wears</title>
+<meta name="description" content="Send an enquiry or book a fitting appointment at Army’s Wears.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="wrap"><h1>Enquiry &amp; Booking</h1><p>Ask us a question or reserve a private appointment. Showroom hours: Monday to Saturday, 9:00–17:00.</p></div></section>
+<section class="section"><div class="wrap">
+  <div class="tabs" role="tablist"><button class="tab" role="tab" data-tab="enquiry" aria-selected="true">Make an enquiry</button><button class="tab" role="tab" data-tab="booking" aria-selected="false">Book an appointment</button></div>
+
+  <div class="panel" id="enquiry" role="tabpanel">
+    <form class="form" novalidate>
+      <div class="row"><div class="f"><label for="e-name">Full name</label><input id="e-name" name="name" data-rule="name" autocomplete="name"><div class="err" aria-live="polite"></div></div>
+      <div class="f"><label for="e-email">Email</label><input id="e-email" name="email" type="email" data-rule="email" autocomplete="email"><div class="err" aria-live="polite"></div></div></div>
+      <div class="f"><label for="e-phone">Phone</label><input id="e-phone" name="phone" type="tel" data-rule="phone" autocomplete="tel"><div class="err" aria-live="polite"></div></div>
+      <div class="f"><label for="e-msg">Your message</label><textarea id="e-msg" name="message" rows="5" data-rule="message"></textarea><div class="err" aria-live="polite"></div></div>
+      <button class="btn" type="submit">Send enquiry</button>
+    </form>
+    <div id="enquiry-done"></div>
+  </div>
+
+  <div class="panel" id="booking" role="tabpanel" hidden>
+    <form class="form" novalidate>
+      <div class="f"><label for="b-service">Service</label><select id="b-service" name="service" data-rule="service"><option value="">Select a service</option><option>Suit fitting</option><option>Bespoke consultation</option><option>Alterations</option><option>Group or uniform order</option></select><div class="err" aria-live="polite"></div></div>
+      <div class="f"><label for="b-date">Preferred date</label><input id="b-date" name="date" type="date" data-rule="date"><div class="err" aria-live="polite"></div></div>
+      <div class="f"><label id="slot-label">Available times</label><div class="slots" id="slots" role="group" aria-labelledby="slot-label"></div><div class="err" id="slot-err" aria-live="polite"></div></div>
+      <div class="row"><div class="f"><label for="b-name">Full name</label><input id="b-name" name="name" data-rule="name" autocomplete="name"><div class="err" aria-live="polite"></div></div>
+      <div class="f"><label for="b-phone">Phone</label><input id="b-phone" name="phone" type="tel" data-rule="phone" autocomplete="tel"><div class="err" aria-live="polite"></div></div></div>
+      <div class="f"><label for="b-email">Email</label><input id="b-email" name="email" type="email" data-rule="email" autocomplete="email"><div class="err" aria-live="polite"></div></div>
+      <button class="btn brass" type="submit">Confirm appointment</button>
+    </form>
+    <div id="booking-done"></div>
+  </div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collection | Army’s Wears</title>
+<meta name="description" content="Browse suits, jackets, shirts, trousers, footwear and accessories.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/main.js" defer></script>
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<section class="page-hero"><div class="wrap"><h1>The Collection</h1><p>Search, filter and sort our current range. Select Enquire on any piece to ask about sizing and availability.</p></div></section>
+<section class="section"><div class="wrap">
+  <div class="toolbar">
+    <div class="chips" id="chips" role="group" aria-label="Filter by category"></div>
+    <div class="tools">
+      <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+      <select id="sort" aria-label="Sort products"><option value="">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="sale">On sale first</option></select>
+    </div>
+  </div>
+  <p class="count" id="count" aria-live="polite"></p>
+  <div class="grid g4" data-products></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+</body>
+</html>
